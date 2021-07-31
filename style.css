@@ -92,7 +92,7 @@ body {
 }
 
 svg {
-	position: absolute;
+	position: fixed;
 	bottom: 0px;
 	padding: 0;
 }
