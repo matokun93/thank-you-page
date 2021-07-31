@@ -19,6 +19,11 @@
 	--clr-space-crayola: #2b3d41;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 *,
 *::after,
 *::before {
@@ -58,16 +63,17 @@ body {
 	color: whitesmoke;
 }
 
-.container {
+.content {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
 	font-size: 1em;
+	height: 100vh;
+	gap: 1em;
 }
 
-.container a {
+.content a {
 	text-decoration: none;
 	color: whitesmoke;
 	border-radius: 10px;
@@ -81,24 +87,30 @@ body {
 	margin-top: 1.5rem;
 }
 
-.container a:hover {
+.content a:hover {
 	background: rgb(87, 193, 255);
 }
 
+svg {
+	position: absolute;
+	bottom: -100px;
+	padding: 0;
+}
+
 @media (max-width: 1000px) {
-	.container {
+	.content {
 		font-size: 0.9em;
 	}
 }
 
 @media (max-width: 600px) {
-	.container {
+	.content {
 		font-size: 0.8em;
 	}
 }
 
 @media (max-width: 400px) {
-	.container {
+	.content {
 		font-size: 0.65em;
 	}
 }
